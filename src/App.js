@@ -15,8 +15,8 @@ export default function App() {
   const { movies, isLoading, error } = useMovies(query);
 
   const [watched, setWatched] = useState(function () {
-    const storedValue = localStorage.getItem("watched");
-    return JSON.parse(storedValue);
+    const storedVxalue = localStorage.getItem("watched");
+    return JSON.parse(storedVxalue);
   });
 
   function handleSelectMovie(id) {

@@ -8,7 +8,6 @@ export default function useMovies(query) {
   const [error, setError] = useState("");
   useEffect(
     function () {
-
       const controller = new AbortController();
 
       async function fetchMovies() {
